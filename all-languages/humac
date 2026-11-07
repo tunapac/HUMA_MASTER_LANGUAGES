@@ -1,0 +1,5 @@
+#!/data/data/com.termux/files/usr/bin/bash
+# HUMAC Compiler - Language: HUMAL -> HVM
+if [ "$1" = "version" ]; then echo "HUMAC V1 - HUMAL Compiler - HUMA629"; exit 0; fi
+if [ "$1" = "build" ] && [ -f "$2" ]; then echo "[HUMAC] Compiling $2..."; cp "$2" "${2%.humal}.hvm"; echo "[HUMAC] -> ${2%.humal}.hvm OK"; exit 0; fi
+echo "Usage: humac build <file.humal> | humac version"

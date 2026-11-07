@@ -1,0 +1,6 @@
+#!/data/data/com.termux/files/usr/bin/bash
+# hson - HUMA629 - CHAIN 629 - PUF 368f9466
+if [ "$1" = "version" ]; then echo "hson V1 - HUMA629 - CHAIN 629"; exit 0; fi
+if [ "$1" = "run" ] && [ -f "$2" ]; then echo "[hson] Running $2..."; cat "$2"; echo "[hson] OK"; exit 0; fi
+if [ "$1" = "build" ] && [ -f "$2" ]; then echo "[hson] Building $2..."; cp "$2" "$2.hvm"; echo "[hson] Built OK"; exit 0; fi
+echo "Usage: hson run|build <file> | hson version"

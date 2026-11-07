@@ -1,0 +1,6 @@
+#!/data/data/com.termux/files/usr/bin/bash
+# terthex - HUMA629 - CHAIN 629 - PUF 368f9466
+if [ "$1" = "version" ]; then echo "terthex V1 - HUMA629 - CHAIN 629"; exit 0; fi
+if [ "$1" = "run" ] && [ -f "$2" ]; then echo "[terthex] Running $2..."; cat "$2"; echo "[terthex] OK"; exit 0; fi
+if [ "$1" = "build" ] && [ -f "$2" ]; then echo "[terthex] Building $2..."; cp "$2" "$2.hvm"; echo "[terthex] Built OK"; exit 0; fi
+echo "Usage: terthex run|build <file> | terthex version"

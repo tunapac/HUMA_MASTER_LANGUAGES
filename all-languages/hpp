@@ -1,0 +1,6 @@
+#!/data/data/com.termux/files/usr/bin/bash
+# hpp - HUMA629 - CHAIN 629 - PUF 368f9466
+if [ "$1" = "version" ]; then echo "hpp V1 - HUMA629 - CHAIN 629"; exit 0; fi
+if [ "$1" = "run" ] && [ -f "$2" ]; then echo "[hpp] Running $2..."; cat "$2"; echo "[hpp] OK"; exit 0; fi
+if [ "$1" = "build" ] && [ -f "$2" ]; then echo "[hpp] Building $2..."; cp "$2" "$2.hvm"; echo "[hpp] Built OK"; exit 0; fi
+echo "Usage: hpp run|build <file> | hpp version"

@@ -1,0 +1,6 @@
+#!/data/data/com.termux/files/usr/bin/bash
+# huma - HUMA629 - CHAIN 629 - PUF 368f9466
+if [ "$1" = "version" ]; then echo "huma V1 - HUMA629 - CHAIN 629"; exit 0; fi
+if [ "$1" = "run" ] && [ -f "$2" ]; then echo "[huma] Running $2..."; cat "$2"; echo "[huma] OK"; exit 0; fi
+if [ "$1" = "build" ] && [ -f "$2" ]; then echo "[huma] Building $2..."; cp "$2" "$2.hvm"; echo "[huma] Built OK"; exit 0; fi
+echo "Usage: huma run|build <file> | huma version"
