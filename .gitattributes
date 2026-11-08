@@ -1,0 +1,5 @@
+*.humal linguist-vendored=false
+*.humabank linguist-vendored=false
+*.ufid linguist-vendored=false
+*.hson linguist-vendored=false
+*.hsn linguist-vendored=false
