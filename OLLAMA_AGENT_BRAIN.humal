@@ -1,0 +1,9 @@
+HGN_OLLAMA_AGENT_BRAIN_V4 {
+  models: mistral:7b:qwen2:7b:llama3:8b:llama31:8b
+  endpoint: 10.629.0.17:11434:LOCAL_NO_CLOUD
+  consensus: 2of3
+  function ollama_perceive(tx) {
+    if tx.contains(THREAT) { return "THREAT:OLLAMA" }
+    return "CLEAN"
+  }
+}

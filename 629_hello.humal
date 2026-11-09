@@ -1,0 +1,6 @@
+contract 629_Connectivity_Hello {
+  centre: Nigeria 2 Plots - 5 Rigs
+  func broadcast_629_Helloo() {
+    emit Global: "Hellooo World from 629 Connectivity - 11G LIVE"
+  }
+}

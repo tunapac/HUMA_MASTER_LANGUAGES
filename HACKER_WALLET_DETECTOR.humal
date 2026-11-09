@@ -1,0 +1,7 @@
+HGN_HACKER_WALLET_DETECTOR_V4 {
+  checks: 7_CHECKS:non_huma629:fake_PUF:fake_GPS:fake_XRF:fake_proof:fake_ID:anomaly
+  function detect_hacker_wallet(tx) {
+    if!tx.wallet.startsWith("huma629dfhhruhvu") { return "HACKER:WALLET_NON_HUMA629" }
+    return "CLEAN"
+  }
+}

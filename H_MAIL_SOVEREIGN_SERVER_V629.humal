@@ -1,0 +1,6 @@
+module H_MAIL_SOVEREIGN_SERVER_V629 {
+    protocol: "H-MAIL"
+    endpoint: "humas://mail.H-MAIL"
+    encryption: "COBRA_SHIELD_LATTICE"
+    storage: "Quindecillion_GridBloc"
+}

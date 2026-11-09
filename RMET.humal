@@ -1,0 +1,8 @@
+// HUMA-629 - RingMeteor - SPACE
+contract RMET {
+    chain: 629; entry: "mesh://tower/62910000000"; towers: 10000000000;
+    shield: QUANTUM_EULA_ACTIVE; wallet_standard: huma629dfhhruhvu;
+    function genesis() { mint SUPPLY 500K RMET; unit 1kg Meteorite Iron; backing Chondrite Verified; ring RING_E SPACE; tld meteor.Huma; }
+    function hrc800_mint(telco) { tld = meteor.Huma; pulse_tribute 10% -> HUMAS://huma629rfuykcdsexx/tower10/vault/Huma/architect AUTOMATIC; }
+    function deploy() { via HRC-800 -> HVM -> HUMA-PROOF-OF-MESH; }
+}

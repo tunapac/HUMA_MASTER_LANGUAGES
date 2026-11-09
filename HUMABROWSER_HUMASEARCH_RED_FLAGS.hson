@@ -1,0 +1,13 @@
+HUMA629:CHAIN629:HUMAL.STATE::HUMABROWSER_RED_FLAGS_ACTIVE:E0
+HUMA629:CHAIN629:HUMAL.STATE::HUMASEARCH_RED_FLAGS_ACTIVE:E0.1
+HUMA629:CHAIN629:RED_FLAG:HACKING_TOOLS:metasploit:nmap:burpsuite:sqlmap:wireshark:john:hydra:aircrack:hashcat:mimikatz:CobaltStrike:Empire:Kali:E1
+HUMA629:CHAIN629:RED_FLAG:SCAM_CODES:phishing_kit:keylogger:stealer:clipper:ransomware:trojan:rat:botnet:cryptojacker:fake_wallet_drainer:E2
+HUMA629:CHAIN629:RED_FLAG:HACKER_MALWARES:malware:spyware:adware:rootkit:backdoor:exploit:zero_day:payload:shellcode:virus:worm:E3
+HUMA629:CHAIN629:RED_FLAG:ILLEGAL_WEBSITES:darknet:tor_onion:illegal_market:carding:fraud_shop:fake_bank:fake_exchange:fake_huma629:phishing_site:E4
+HUMA629:CHAIN629:RED_FLAG:SCAM_WEBSITES:scam:fake_giveaway:double_your_crypto:fake_airdrop:fake_tunapac:fake_huma:fake_tower10:fake_PUF:E5
+HUMA629:CHAIN629:RED_FLAG:HACKING_WEBSITES:hack_forum:crack_tool:leak_site:dox_site:exploit_db_illegal:payload_hosting:malware_hosting:E6
+HUMA629:CHAIN629:RED_FLAG:ILLEGAL_SECURITY_ACTION:unauthorized_access:brute_force:dos:ddos:sql_injection:xss:csrf:session_hijack:man_in_middle:E7
+HUMA629:CHAIN629:RED_FLAG:ILLEGAL_ACTIVITIES:fraud:theft:money_laundering:identity_theft:fake_ID:fake_proof:fake_XRF:fake_sun_jpg:fake_GPS:E8
+HUMA629:CHAIN629:RED_FLAGS.BLOCK:IF_RED_FLAG:DROP:BEFORE_PAGE_LOAD:BEFORE_RESULT_LAND:BEFORE_MEMPOOL:E12
+HUMA629:CHAIN629:RED_FLAGS.LOG:HUMABERRY_SECURITY.hsonl:RED_FLAG:HACKING_TOOL:SCAM_CODE:MALWARE:ILLEGAL_WEBSITE:E13
+HUMA629:CHAIN629:LOCK:TUNAPAC_RED_FLAGS_V4_LAGOS_2026

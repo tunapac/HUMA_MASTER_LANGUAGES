@@ -1,0 +1,67 @@
+// HUMABERRY BODY + ENGINE — HUMAL Language — FROM GROUND
+// File: HUMABERRY-BODY-ENGINE.humal
+// Founder: TUNAPAC | Since GSM 2001
+// Factory: HGN CITY FACTORY VISION | Chain 629
+// Purpose: Body and Engine that lets Robot really function
+
+contract HUMABERRY-BODY-ENGINE {
+    chain: 629;
+    entry: "mesh://tower/62910000001";
+    towers: 10000000000;
+    shield: QUANTUM_EULA_ACTIVE;
+    wallet_standard: huma629dfhhruhvu;
+    hardware: HUMABERRY_MK1;
+    mesh: RIGS-MESHLINK-TUNNEL;
+
+    // GENESIS — Body boot, not app boot
+    function genesis() {
+        mint BODY 1 HUMABERRY;
+        unit 24V 20Ah LiFePO4;
+        chassis ALUMINUM_40x40_500x400;
+        motor 4x BLDC_HUB_350W_ENCODER;
+        driver 2x ODRIVE_S1_BTS7960;
+        brain HUMABERRY_HGN_11G;
+        mesh_id 10.629.0.1;
+        founder TUNAPAC_FOUNDER;
+    }
+
+    // ENGINE — Power + Drive — real spin, not image
+    function engine_drive(left, right) {
+        power = check BMS_100A VOLTAGE;
+        if power < 20V { shield = SAFE_STOP; return; }
+        
+        // Real motor command via HVM -> HGN hardware
+                odrive_left = torque left * 10 via /dev/ttyACM0;
+        odrive_right = torque right * 10 via /dev/ttyACM1;    
+        // Record to ORBITAL Grids
+        proof = via HVM -> SOVEREIGN-ORBITAL-CHAIN/orbital_record;
+        mesh_broadcast 10.629.0.x DRIVE L:left R:right;
+    }
+
+    // BODY — Factory task
+    function body_boot() {
+        via HGN_11G/humaos/kernel -> HUMA-PROOF-OF-MESH;
+        listen entry mesh://tower/62910000000;
+        towers_access 10B;
+    }
+
+    function body_forward(sec) {
+        engine_drive 0.5, 0.5;
+        hold sec;
+        engine_drive 0, 0;
+    }
+
+    function body_listen_orbital(command) {
+        if command == "FACTORY_TASK_CARRY" {
+            body_forward 3;
+        }
+        if command == "FACTORY_TASK_STOP" {
+            engine_drive 0, 0;
+        }
+    }
+
+    function deploy() {
+        via HRC-800 -> HVM -> HUMA-PROOF-OF-MESH -> RIGS-MESHLINK-TUNNEL/qlr_router;
+        // This compiles to your Humaberry, not to Python
+    }
+}

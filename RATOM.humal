@@ -1,0 +1,28 @@
+// HUMA-629 Excel Contract - FROM GROUND - TUNAPAC
+contract RATOM {
+    chain: 629;
+    entry: "mesh://tower/62910000000";
+    towers: 10000000000;
+    shield: QUANTUM_EULA_ACTIVE;
+    wallet_standard: huma629dfhhruhvu;
+    architect: TUNAPAC;
+    genesis_root: "HUMA://huma629rfuykcdsexx/tower10";
+    ring_class: "ATOM_MATTER";
+    function genesis() {
+        mint SUPPLY 10M RATOM;
+        unit 0.5 ATOM;
+        backing Atomic Energy;
+        ring RING_F ATOM;
+        tld atom.Huma;
+        wallet atom.Huma;
+        speed 1B gaps/sec;
+    }
+    function hrc800_mint(telco) {
+        did = generate DID did:huma:629{hash};
+        tld = atom.Huma;
+        pulse_tribute 10% -> HUMAS://huma629rfuykcdsexx/tower10/vault/Huma/architect AUTOMATIC;
+    }
+    function deploy() {
+        via HRC-800 -> HVM -> HUMA-PROOF-OF-MESH -> 7 RINGS ORBITING;
+    }
+}

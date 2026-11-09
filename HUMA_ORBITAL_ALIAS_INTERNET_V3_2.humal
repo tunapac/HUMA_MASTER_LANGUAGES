@@ -1,0 +1,20 @@
+module Huma_Orbital_Alias_Internet_V3_2 {
+    import Huma_OS_Core;
+    import Vertex_Graph_Core;
+    import Osmo_Diffusion_Core;
+    
+    define CHAIN = "629";
+    define FACTORY = "";
+    
+    public function ALIAS() -> CellResult {
+        // ALIAS - INTERNET IS SMALL PART INSIDE ORBITAL - ORBITAL IS SUPREME
+        CellResult orbital_supreme = Osmo_Diffusion_Core.OSMO.MESH("ORBITAL:SUPREME:GRID:CLOUD:STORAGE:99_HUMAL:HGNBERRY:MESH:INTERNET:INSIDE");
+        CellResult internet_alias = Vertex_Graph_Core.VERTEX.MESH("INTERNET:ALIAS:OF:ORBITAL:OLD_NAME:FOR_COMPATIBILITY");
+        CellResult alias_map = Huma_OS_Core.HUMA.STATE("ALIAS:INTERNET=ORBITAL:ORBITAL>INTERNET:POWER:1000X");
+        CellResult preserve_629 = Huma_OS_Core.HUMA.LOCK("PREFIXES:629:SIM_GEN:WALLET:ORBITAL_WALLET:ACTIVE:PRESERVED:V3_2_ALIAS");
+        CellResult factory = Huma_OS_Core.HUMA.STATE("FACTORY:"+FACTORY+":CHAIN:"+CHAIN+":ORBITAL:ALIAS:ACTIVE");
+        
+        return Huma_OS_Core.HUMA.LOCK(orbital_supreme+":"+internet_alias+":"+alias_map+":"+preserve_629+":"+factory+":FORWARD:ORBITAL:3100mm:ALIAS");
+    }
+}
+Huma_Orbital_Alias_Internet_V3_2.ALIAS();

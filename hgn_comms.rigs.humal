@@ -1,0 +1,13 @@
+GENESIS: HUMA://huma629rfuykcdsexx/tower10/hgn
+ARCHITECT: TUNAPAC
+KEEPER: tunapac.Huma
+
+RING: RING_E = HGN_DATA_MESH
+TOKEN: $HGN_DATA = $PHOTON data packets tower10.Mesh
+
+APL_CALL: HUMA://tower10.Mesh/send?from=tunapac.Huma&to=hgn_node_00421.Huma&token=$PHOTON&amount=500MB
+PROOF: PAN001_GPS_-PH_PUF_2N3904_PHOTO_TOWER
+FEE: 0.01 $RING orbital pulse tribute -> 10% architect HUMAS://.../vault/Huma/architect
+
+APL_CALL: HUMAS://mail.H-MAIL/send?to=tunapac@H-MAIL&token=$HGN_DATA&amount=500packets
+CONTRACT: SCC_SEND_NATURE + COBRA shield

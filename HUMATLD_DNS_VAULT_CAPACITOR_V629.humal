@@ -1,0 +1,7 @@
+module HUMATLD_DNS_VAULT_CAPACITOR_V629 {
+    target: ".Huma"
+    dns_vault: "64-Qubit Transmon QPU-629-A"
+    tld_capacitor: "ACTIVE"
+    resolver: "huma://dns.vault.huma629"
+    security: "AUTO_BLOCK_NON_HUMA629"
+}

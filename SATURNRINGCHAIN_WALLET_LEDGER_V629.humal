@@ -1,0 +1,5 @@
+module SATURNRINGCHAIN_WALLET_LEDGER_V629 {
+    wallet: "SaturnRingchain Orbital Wallet"
+    compliance: "QFS_Financial_Engine"
+    fee_split: "2_percent_to_huma629:368f9466:main:62901:8f3e"
+}

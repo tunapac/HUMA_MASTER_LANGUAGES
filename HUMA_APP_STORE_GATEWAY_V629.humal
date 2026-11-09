@@ -1,0 +1,5 @@
+module HUMA_APP_STORE_GATEWAY_V629 {
+    store_url: "huma://store.Huma"
+    app_delivery: "Decentralized_HUMAL_Packages"
+    status: "ONLINE"
+}

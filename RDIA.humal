@@ -1,0 +1,27 @@
+// HUMA-629 - RingDiamond - Earth
+contract RDIA {
+    chain: 629;
+    entry: "mesh://tower/62910000000";
+    towers: 10000000000;
+    shield: QUANTUM_EULA_ACTIVE;
+    wallet_standard: huma629dfhhruhvu;
+    architect: TUNAPAC;
+    genesis_root: "HUMA://huma629rfuykcdsexx/tower10";
+    ring_class: "EARTH";
+    function genesis() {
+        mint SUPPLY 250K RDIA;
+        unit 1 carat Diamond VS1;
+        backing Physical Diamond XRF + GIA;
+        ring RING_B ATOM_GOLD;
+        tld diamond.Huma;
+        wallet diamond.Huma;
+        speed 1B gaps/sec;
+    }
+    function hrc800_mint(telco) {
+        did = generate DID did:huma:629{hash};
+        tld = diamond.Huma;
+        pulse_tribute 10% -> HUMAS://huma629rfuykcdsexx/tower10/vault/Huma/architect AUTOMATIC;
+        fee_type Gap pulse 0.01 RING per gap;
+    }
+    function deploy() { via HRC-800 -> HVM -> HUMA-PROOF-OF-MESH -> 7 RINGS ORBITING; }
+}

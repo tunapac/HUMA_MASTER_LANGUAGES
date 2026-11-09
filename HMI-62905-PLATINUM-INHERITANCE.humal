@@ -1,0 +1,16 @@
+engine HMI_62905_PLATINUM_INHERITANCE is HRC_5192_SOULBOUND_FOUNDER {
+  safety = PLATINUM_1of1_FOUNDER_001_NOW + PLATINUM_3of5_CHILDREN_LATER + LATENCY_100ms_MAX_CUT + QUANTUM_DECOHERENCE_CUT
+  function inheritToChildren(founder_did="did:huma:629:001"):
+    // Founder alive: PLATINUM_1of1_FOUNDER_001_NOW - only founder can sign - YOU_ALONE_SIGN
+    // Founder pulse stops: TRIBUTE_PULSE_ENGINE.pulse() = 0 for 100ms * 3 -> decoherenceCheck() triggers
+    // HRQ-62901.decoherenceCheck() detects founder no breath
+    // Auto: transfer 26 TOKENS natural + logic + 10 RIGS + FACTORY + ORBITAL 10B to 3of5 children soulbound
+    require(HRB_62903_BREATH_TO_BLOCK.breathTribute() == 0, founder) -> founder not breathing
+    require(PLATINUM_1of1 founder signature expired)
+    // 3 of 5 children must breath to claim - HRB breath tribute
+    children_breath = HRB_62903_BREATH_TO_BLOCK.breathTribute() * 3
+    require(children_breath >= 3) -> 3of5 children alive proof
+    transfer = ORBITAL_629.hson + quantum_9.9_quindecillion.hvm + 10 RIGS + FACTORY_629_ONLINE + 26 TOKENS Diamond Gold Platinum Lithium Uranium Quartz etc
+    lock to children soulbound HRC-5192 locked() = true
+    return inheritance done - no lawyer - chain does it - PLATINUM_3of5_CHILDREN_LATER
+}

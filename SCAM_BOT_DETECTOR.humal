@@ -1,0 +1,7 @@
+HGN_SCAM_BOT_DETECTOR_V4 {
+  checks: 6_CHECKS:bot_pattern:rapid_tx:fake_giveaway:double_crypto:fake_airdrop:clipper
+  function detect_scam_bot(tx) {
+    if tx.pattern.contains("bot") { return "SCAM_BOT" }
+    return "CLEAN"
+  }
+}

@@ -1,0 +1,6 @@
+module QPU_629_HARDWARE_SPEC_V629 {
+    cpu: "HUMA-1 CPU 9.9Q"
+    qpu: "QPU-629-A 64-Qubit Transmon"
+    cryo_core: "Active_Refrigeration"
+    memory: "512GB HBM3 ECC + Quantum Cache"
+}

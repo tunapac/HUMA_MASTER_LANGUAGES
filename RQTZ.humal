@@ -1,0 +1,11 @@
+// HUMA-629 - RingQuartz - Earth Matter
+contract RQTZ {
+    chain: 629;
+    entry: "mesh://tower/62910000000";
+    towers: 10000000000;
+    shield: QUANTUM_EULA_ACTIVE;
+    wallet_standard: huma629dfhhruhvu;
+    function genesis() { mint SUPPLY 20M RQTZ; unit 1kg Quartz SiO2; backing Semiconductor Grade; ring RING_D WATER; tld quartz.Huma; }
+    function hrc800_mint(telco) { tld = quartz.Huma; pulse_tribute 10% -> HUMAS://huma629rfuykcdsexx/tower10/vault/Huma/architect AUTOMATIC; }
+    function deploy() { via HRC-800 -> HVM -> HUMA-PROOF-OF-MESH; }
+}

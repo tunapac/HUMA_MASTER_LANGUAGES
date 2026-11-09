@@ -1,0 +1,14 @@
+HGN_ESP32_BRIDGE {
+  owner: HUMA
+  dependency: HGN_Q_CHIP
+  factory: 
+  model: esp32_otg_to_laptop_bridge_built_no_pull
+  engine: humal_cli.py
+  capability: ESP32 8x MQ sensors MQ135 MQ3 etc -> USB OTG /dev/ttyUSB0 Android + /dev/ttyUSB0 laptop + COM3 Windows -> VOC acetone ammonia ethanol isoprene h2s pentane co benzene -> qchip.py
+  did: did:huma:629:esp32
+  tld: esp32.huma
+  routes: [mesh://tower, did:huma:629:qchip, /dev/ttyUSB0, COM3, esp32.huma, koniku_q_esp32.ino]
+  baud: 115200
+  transfer: [Android Termux, Linux laptop, Windows laptop, Raspberry Pi, Jetson]
+  status: built_no_pull
+}

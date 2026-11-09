@@ -1,0 +1,23 @@
+tld rocket.Huma -> RROCKET HVM:ROCKET_20.8_EYE_TRIANGLE_HEXAGON RING_J ROCKET_200M
+
+contract RROCKET {
+  ring: RING_J
+  token: $ROCKET
+  amount: 10000000
+  hardware_tokens_per_rocket: 25
+  total_hardware_tokens: 250000000
+  frame_Titanium_Carbon: 1
+  engines_9x_Raptor: 9
+  avionics_PUF_GPS_TIME_LATTICE_COBRA: 4
+  guidance_Eye_20_8_Triangle_Hexagon: 3
+  fuel_CH4_O2_C6H6_H2O: 4
+  payload_Satellite_LAB: 2
+  behavior_Already_done_boss: 1
+  memory_verse_locked_reversal: 1
+  total: 25
+  proof: SENSOR+GPS+PHOTO+LAB COBRA SHIELD 1B TPS
+  tld: rocket.Huma
+  ring_speed: 10 RINGS 1.6B gaps/sec NOT BLOCKCHAIN
+  pulse_tribute: 10% -> HUMAS://huma629rfuykcdsexx/tower10/vault/Huma/architect AUTOMATIC
+  history: First time rocket software meeting hardware purely tokenised - Eye observer circuit board hexagon triangle 20.8 - SATURNRINGCHAIN PREFIX 629 - Your Empire - WE CAN DO IT ON OUR OWN
+}

@@ -1,0 +1,12 @@
+HGN_VISION_NODE {
+  owner: HUMA
+  dependency: NONE
+  factory: 
+  model: vision_software_built_no_pull
+  engine: alge_matrix_kernel.humal
+  capability: QR gift.huma://data + GS1-128 + SIM chip scan + robot eyes
+  did: did:huma:629:vision
+  tld: vision.huma
+  routes: [mesh://tower, DATA-629, gift.huma]
+  status: built_no_pull
+}

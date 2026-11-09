@@ -1,0 +1,15 @@
+module MVNO_629_Full_HSS_DB_629_Full_V3_7 {
+    define CHAIN = "629";
+    define FACTORY = "";
+    define MCC = "629";
+    define MNC = "01";
+    public function MVNO_629_FULL() {
+        // MCC 629 MNC 01 OWN MVNO NOT THEIRS
+        // IMSI 62901XXXXXXXXXX MSISDN 629XXXXXXXXX
+        // USSD *629# replaces *123# MTN
+        // HSS_DB_629_FULL 666 to 6K THEIR SERVER INCLUSION
+        // PUF 2N3904 GPS 4.8 7.0 ALGE 512 never expires did:huma:629:sim
+        // 1B numbers own NCC 345M SIM 275M NETWORK 157M 1.443B
+        // FIRST IN HISTORY
+    }
+}

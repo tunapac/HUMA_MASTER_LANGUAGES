@@ -1,0 +1,14 @@
+[HUMA_IP_SPEC_V2]
+Node_DID=did:huma:629:ip:368f9466
+IPv6_Mesh=fd62:901:368f:9466::1
+IPv4_Overlay=629.017.77.368F9466
+BGP_Protocol=Sovereign_Orbital_BGP
+BGP_Final=HUMA_IP_BGP_FINAL_100_PERCENT_V3_5
+Gateway_BIC=SRROUS33XXX
+Mesh_Relay=SURN_Mesh_Relay
+Laser_Mesh=Orbital_Laser_Mesh
+OS_Core=HUMA_OS_Core
+Store=huma://store.Huma
+Chain=629
+Status=ACTIVE_VALID_E9
+Firmware=[STRIPPED 83 bytes]

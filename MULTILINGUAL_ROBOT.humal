@@ -1,0 +1,15 @@
+HGN_MULTILINGUAL_ROBOT {
+  owner: HUMA
+  dependency: NONE
+  factory: 
+  brain: ORACLE_20_8 + ORACLE_10_4 + Base-Llama-3
+  hands: ORACLE_MISTRAL_7B.humal
+  tongue: ORACLE_QWEN_2.hsn
+  eyes: ORACLE_VISION.humal
+  voice: ORACLE_VOICE.hsn
+  gas_fee: Tribute pulse
+  did: did:huma:629:robot:multilingual
+  tld: robot.huma
+  routes: [*629#, DATA-629, gift.huma://data, mesh://tower]
+  status: built_no_pull
+}

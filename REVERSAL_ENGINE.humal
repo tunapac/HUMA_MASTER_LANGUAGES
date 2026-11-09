@@ -1,0 +1,13 @@
+HGN_REVERSAL {
+  owner: HUMA
+  dependency: NONE
+  factory: 
+  model: reversal_built_no_pull
+  engine: MEMORY_VERSE.humal + SATURN_RING_CHAIN.hsn + TRIBUTE_PULSE_ENGINE.humal
+  capability: reverse time + reverse transaction + reverse mint + undo DATA-629 + Tribute pulse reversal
+  did: did:huma:629:reversal
+  tld: reversal.huma
+  routes: [DATA-629, gift.huma://data, did:huma:629:mint, mesh://tower]
+  gas_fee: Tribute pulse
+  status: built_no_pull
+}

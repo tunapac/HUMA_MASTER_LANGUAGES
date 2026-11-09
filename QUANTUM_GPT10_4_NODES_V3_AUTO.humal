@@ -1,0 +1,5 @@
+HGN_QUANTUM_GPT10_4_NODES_V3_AUTO {
+  nodes: 10.4_GHz_quantum:4_nodes:auto_scale:IjebuNorth_Oru
+  compression: 500000x:2EB_physical_to_1000YB_logical
+  function auto_compress(file) { return compress(file, ratio=500000) }
+}

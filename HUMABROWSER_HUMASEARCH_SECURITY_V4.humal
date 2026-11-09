@@ -1,0 +1,19 @@
+HGN_HUMABROWSER_HUMASEARCH_SECURITY_V4 {
+  owner: TUNAPAC
+  factory: 
+  chain: HUMA629:CHAIN629:LOCK
+  did: did:huma:629:security:humabrowser:humasearch:red_flags:v4
+  red_flags_db: [HACKING_TOOLS,SCAM_CODES,HACKER_MALWARES,ILLEGAL_WEBSITES,SCAM_WEBSITES,HACKING_WEBSITES,ILLEGAL_SECURITY_ACTION,ILLEGAL_ACTIVITIES]
+  function humabrowser_v4_filter(url,code,transaction) {
+    if!transaction.wallet.startsWith("huma629dfhhruhvu") { return BLOCK:AUTO:RED_FLAG:NON_HUMA629:BEFORE_PAGE_LOAD:HUMABROWSER }
+    for category in red_flags_db { for pattern in red_flags_db[category] { if url.contains(pattern) OR code.contains(pattern) { block_before_land(transaction) return BLOCK:AUTO:RED_FLAG:category:pattern:BEFORE_PAGE_LOAD:HUMABROWSER:NO_QUESTIONS } } }
+    return ALLOW:AUTO:HUMABROWSER:CLEAN
+  }
+  function humasearch_v4_filter(query,result_url,transaction) {
+    for category in red_flags_db { for pattern in red_flags_db[category] { if query.toLowerCase().contains(pattern) { block_before_land(transaction) return BLOCK:AUTO:RED_FLAG:ILLEGAL_SEARCH_QUERY:category:pattern:BEFORE_RESULT_LAND:HUMASEARCH:NO_QUESTIONS } } }
+    if HACKER_WALLET_DETECTOR.humal.detect_hacker_wallet(transaction).contains("HACKER") { return BLOCK:AUTO:RED_FLAG:HACKER_WALLET }
+    if SCAM_BOT_DETECTOR.humal.detect_scam_bot(transaction).contains("SCAM_BOT") { return BLOCK:AUTO:RED_FLAG:SCAM_BOT }
+    return ALLOW:AUTO:HUMASEARCH:CLEAN
+  }
+  status: V4_RED_FLAGS_ACTIVE_LAGOS_IJEBU_NORTH_ORU_ILAPORU_2026-09-27
+}

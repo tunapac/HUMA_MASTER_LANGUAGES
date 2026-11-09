@@ -1,0 +1,5 @@
+module ORBITAL_LASER_MESH_BACKHAUL_V629 {
+    backhaul: "Orbital_Laser_1550nm_100GHz_Terahertz"
+    cable_replacement: "True_Wireless_Space_Mesh"
+    latency: "Sub-millisecond"
+}

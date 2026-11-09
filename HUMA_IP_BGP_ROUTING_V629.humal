@@ -1,0 +1,7 @@
+module HUMA_IP_BGP_ROUTING_V629 {
+    network_layer: "HUMA-IP"
+    bgp_routing: "Sovereign_Orbital_BGP"
+    node_did: "did:huma:629:ip:368f9466"
+    ipv6_mesh: "fd62:901:368f:9466::1"
+    icann_bypass: "TRUE"
+}

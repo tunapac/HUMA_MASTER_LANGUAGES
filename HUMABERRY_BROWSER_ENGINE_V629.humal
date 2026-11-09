@@ -1,0 +1,6 @@
+module HUMABERRY_BROWSER_ENGINE_V629 {
+    browser: "HUMABERRY_BROWSER"
+    engine: "Native_WASM_Universal"
+    filter: "AUTO_BLOCK_BEFORE_PAGE_LOAD"
+    wallet_link: "huma629:368f9466:main:62901"
+}

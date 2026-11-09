@@ -1,0 +1,8 @@
+// HUMA-629 - RingGold - RING_A
+contract RGOLD {
+    chain: 629; entry: "mesh://tower/62910000000"; towers: 10000000000;
+    shield: QUANTUM_EULA_ACTIVE; wallet_standard: huma629dfhhruhvu;
+    function genesis() { mint SUPPLY 1M RGOLD; unit 1g Gold 9999; backing LBMA XRF; ring RING_B ATOM_GOLD; tld gold.Huma; }
+    function hrc800_mint(telco) { tld = gold.Huma; pulse_tribute 10% -> HUMAS://huma629rfuykcdsexx/tower10/vault/Huma/architect AUTOMATIC; }
+    function deploy() { via HRC-800 -> HVM -> HUMA-PROOF-OF-MESH; }
+}

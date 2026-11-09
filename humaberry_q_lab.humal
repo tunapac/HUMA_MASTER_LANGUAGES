@@ -1,0 +1,16 @@
+HGN_HUMABERRY_Q_LAB {
+  owner: HUMA
+  dependency: HGN_Q_CHIP
+  factory: 
+  model: humaberry_pi_q_bio_chip_factory_built_no_pull
+  engine: humaberry
+  capability: Humaberry Raspberry Pi 4/5 + ESP32 8x MQ via USB/I2C + ORACLE_VISION.humal QR scan + Q-CHIP 8-VOC + IBM 127-qubit diagnose + SOLUTION Lagos labs + DATA logs
+  did: did:huma:629:humaberry:qlab
+  tld: humaberry.huma
+  hardware: [Raspberry Pi 4B/5 8GB, ESP32-WROOM-32, MQ135 MQ3 MQ137, Pi Camera V3 vision.huma, Humaberry HAT]
+  routes: [mesh://tower, did:huma:629:qchip, did:huma:629:esp32, did:huma:629:vision, humaberry.huma, /dev/ttyUSB0, i2c-1]
+  os: Humaberry OS (Debian 12 + HGN Sovereign Stack)
+  factory_bom: huma629_HARDWARE_BLUEPRINT_BOM_COST.txt
+  status: built_no_pull
+  transfer_from: Termux Android ORBIT10 Q_LAB_ACTIVE
+}

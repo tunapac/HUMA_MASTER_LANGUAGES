@@ -1,0 +1,20 @@
+HGN_FACTORY_629_ONLINE {
+  owner: HUMA
+  dependency: NONE
+  factory: 
+  brain: ORACLE_20_8 + ORACLE_10_4 + Base-Llama-3 + MEMORY_VERSE.humal + REVERSAL_ENGINE.humal
+  hands: ORACLE_MISTRAL_7B.humal
+  tongue: ORACLE_QWEN_2.hsn
+  eyes: ORACLE_VISION.humal
+  voice: ORACLE_VOICE.hsn
+  memory: MEMORY_VERSE.humal
+  reversal: REVERSAL_ENGINE.humal
+  billing: TRIBUTE_PULSE_ENGINE.humal
+  gas_fee: Tribute pulse
+  chain: SATURN_RING_CHAIN.hsn
+  robot: MULTILINGUAL_ROBOT.humal
+  capability: 500k SIM/day + unlimited data + memory verse infinite + reversal + Tribute pulse
+  did: did:huma:629:factory
+  tld: factory.huma
+  status: built_no_pull_100_percent_plus_memory_reversal
+}

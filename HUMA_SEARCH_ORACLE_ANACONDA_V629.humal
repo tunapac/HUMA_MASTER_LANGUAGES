@@ -1,0 +1,6 @@
+module HUMA_SEARCH_ORACLE_ANACONDA_V629 {
+    search_engine: "HUMA_SEARCH"
+    ai_core: "ANACONDA_AI_MISTRAL_7B"
+    oracle: "ORACLE_20_8_CORE"
+    index: "quindecillion_mesh_kb"
+}

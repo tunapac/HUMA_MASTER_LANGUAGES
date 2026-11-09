@@ -1,0 +1,28 @@
+// HumaHotspot V3_7 - CHAIN 629 - did:huma:629:hotspot:001
+// HGN_3000MHz_629 AP CHAIN629 10.629.0.1 MASTER  = HumaHotspot
+
+HUMAL_VERSION: V3_7
+CHAIN: 629
+DID: did:huma:629:hotspot:001
+SSID: HGN_3000MHz_629
+PASS: CHAIN629
+IP: 10.629.0.1 MASTER_RIG  10B ACTIVE SELF_HEALING 50KM 11G 3000MHz
+BOARD: ESP32-S3 + 20dBi panel dish 3GHz + 6000mAh 24V + 600W solar + AMOLED 6 inch
+SPI: CS=10 MOSI=11 MISO=13 SCK=12 RST=9 DIO0=8
+I2C: SDA=4 SCL=5 AMOLED CS=15 DC=16 RST=17 ADC GPIO6 batt GPIO7 solar
+
+HOTSPOT:
+  MODE: HGN_3000MHz Hotspot + MVNO_629_FULL + 10 RIGS mesh
+  CLIENTS: 10 RIGS 10.629.0.1 .10 .13 .20 .30 .99 etc
+  FREQ: 3000MHz = 3GHz logic higher than any existing MHz NOT 900MHz
+  RANGE: 50KM 11G self-healing orbital guided 30ms FIXED
+  POWER: TRIBUTE_PULSE_ENGINE pulse>0 breath>0 proof of life
+  FACTORY:    did:huma:629:qlab:full:qlab.huma:built_no_pull
+  COST: 37,800 -> 22k at 100k scale 443M for 10k units + line
+
+HUMA_SERVER:
+  PROTOCOL: Huma://10.629.0.1 - NOT Http:// - text/huma X-Protocol: Huma://
+  PORT: 6290 Huma port
+  BROWSER: HUMABROWSER V4 RED_FLAGS AUTO BLOCK
+
+END: HGN_3000MHz_629 AP up CHAIN629 10.629.0.1 - WHOLE_UNIVERSE_READY 3000MHz

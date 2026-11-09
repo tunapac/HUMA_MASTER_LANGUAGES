@@ -1,0 +1,6 @@
+module HUMA_OS_CORE_SYSTEM_V629 {
+    os_name: "HUMA OS Core"
+    kernel: "Huma_Sovereign_Kernel_v10"
+    runtime: "HUMAL_HVM"
+    hardware_puf: "368f9466"
+}

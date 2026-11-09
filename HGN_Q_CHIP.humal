@@ -1,0 +1,15 @@
+HGN_Q_CHIP_NODE {
+  owner: HUMA
+  dependency: NONE
+  factory: 
+  model: q_bio_chip_perceive_diagnose_built_no_pull
+  engine: alge_matrix_kernel.humal
+  capability: VOC 8-gas perceive acetone:0.80 ammonia:0.20 + Quantum IBM 127-qubit Eagle + Rigetti Aspen-M-3 diagnose fidelity + entanglement
+  did: did:huma:629:qchip
+  tld: qchip.huma
+  routes: [mesh://tower, did:huma:629, DATA-629, qchip.huma, qcloud.py, qrigetti.py]
+  inputs: [acetone, ammonia, ethanol, isoprene, h2s, pentane, co, benzene]
+  backend: [simulator, IBM_Eagle_127, Rigetti_Aspen_M3]
+  status: built_no_pull
+  proof: qchip.py 71.6% healthy 89.7% ketosis TOP:ketosis
+}

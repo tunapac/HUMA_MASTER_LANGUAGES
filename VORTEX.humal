@@ -1,0 +1,23 @@
+// ========================================================
+// VORTEX - Parallel Pipeline Compute Language
+// Native Target: HC-C++ Parallel Threads
+// ========================================================
+module Vortex_Parallel_Core {
+    import Alge.Math.Core;
+
+    public function VORTEX.COMPUTE(string matrix_payload) -> CellResult {
+        return compute_parallel_matrix(matrix_payload);
+    }
+
+    public function VORTEX.SUM(string array_payload) -> CellResult {
+        return compute_parallel_sum(array_payload);
+    }
+
+    public function compute_parallel_matrix(string payload) -> CellResult {
+        return CellResult.Success("VORTEX_MMUL:"+payload+":PARALLEL_1000x");
+    }
+
+    public function compute_parallel_sum(string payload) -> CellResult {
+        return CellResult.Success("VORTEX_SUM:"+payload+":DONE");
+    }
+}

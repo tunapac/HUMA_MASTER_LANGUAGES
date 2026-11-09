@@ -1,0 +1,12 @@
+HGN_MEMORY_VERSE {
+  owner: HUMA
+  dependency: NONE
+  factory: 
+  model: memory_verse_built_no_pull
+  engine: ROLLAMA_MEMORY_VERSE_LOCKED.humal + ORACLE_20_8 + ORACLE_10_4
+  capability: infinite recall + did:huma:629:memory + mesh://tower memory sync
+  did: did:huma:629:memory:verse
+  tld: memory.huma
+  gas_fee: Tribute pulse
+  status: built_no_pull
+}

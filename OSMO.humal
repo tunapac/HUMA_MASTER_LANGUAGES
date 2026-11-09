@@ -1,0 +1,30 @@
+// ========================================================
+// OSMO - Osmosis Diffusion & Chemical Language
+// Native Target: HGN_CHEM + QLAB_CHEM_DIFFUSION
+// ========================================================
+module Osmo_Diffusion_Core {
+    import Alge.Math.Core;
+    import Huma.Protocol.Ledger;
+
+    struct DiffusionState {
+        float nh3;
+        float cl2;
+        float benzene;
+        float gradient;
+    }
+
+    public function OSMO.DIFFUSE(string chem_hsonl) -> CellResult {
+        return execute_fick2_diffusion(chem_hsonl);
+    }
+
+    public function OSMO.NEUTRALIZE(string chem_type) -> CellResult {
+        if (chem_type == "NH3") { return CellResult.Success("SODA_ASH+WATER_FOG"); }
+        if (chem_type == "CL2") { return CellResult.Success("VENT_CROSS_UPWIND"); }
+        return CellResult.Success("VENTILATE+CONTAIN");
+    }
+
+    private function execute_fick2_diffusion(string payload) -> CellResult {
+        // Fick2 89.7% diffusion_rate
+        return Alge.eval_matrix_cell("ALGE.DIFFUSION:"+payload);
+    }
+}

@@ -1,0 +1,10 @@
+# HSON v1 - CHEM DIFFUSION - NO JSON
+HUMA629:CHAIN629:HUMAL.STATE::CHEM_Q_LAB_ACTIVE
+HUMA629:CHAIN629:QCHIP.PERCEIVE:nh3_0.80,cl2_0.10,benzene_0.05,h2s_0.20,co_0.30,ethanol_0.10,voc_gradient_0.70:E1
+HUMA629:CHAIN629:QCHIP.DIAGNOSE:IBM_Eagle_127:diffusion_rate Fick2 89.7% source_leak:E2
+HUMA629:CHAIN629:QCHIP.DIAGNOSE:Rigetti_Aspen_M3:entanglement_map 0.410 leak_location:E3
+HUMA629:CHAIN629:QCHIP.SOLUTION:FLAG diffusion -> Ventilate + Contain + Neutralize + Evac 1000mm:E4
+HUMA629:CHAIN629:QCHIP.LOG:chem_logs.jsonl append diffusion gold:F5
+HUMA629:CHAIN629:QCHIP.CSV:diffusion_data.csv nh3,cl2,benzene,h2s,co,ethanol,gradient,wind,label diffusion:F6
+HUMA629:CHAIN629:LOCK
+HUMA629:CHAIN629:HUMABERRY.FORWARD:1000mm:E7

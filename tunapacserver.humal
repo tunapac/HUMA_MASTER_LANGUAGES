@@ -1,0 +1,32 @@
+
+
+[app]
+name = "TUNAPAC SERVER CENTRAL APP"
+hum = "hum://www.tunapacserver.huma"
+humas = "humas://www.tunapacserver.huma"
+type = "Central Server App — HUMA $100 valuable"
+tower = "62910000000 Igbor 7.45123,8.60805 FORGED 1B TPS"
+hardware = "HGNBerry $40 solar + LoRa + GSM + signer 31415"
+orbital = "leo.saturn.orbit.huma 550km + geo 35786km + quantum 9.9Q"
+
+[economy]
+token = "HUMA 700M only launch $100 grows"
+faucet = "faucet.huma 0.05 HUMA per 0.5 ATOM scarcity"
+tribute = "PULSE_TRIBUTE not gas"
+distribution = "70% towers, 20% founder 629 Node 017, 10% orbital"
+
+[subscriptions]
+free = "0 HUMA — mesh://tower/62910000000 offline forever"
+basic = "10 HUMA/year = $1000/year — 1 name all 13 TLDs — hum:// + humas://"
+builder = "100 HUMA/year = $10k/year — TUNAPAC tier — 10 names + api + control + LEO"
+tower = "1000 HUMA/year = $100k/year — own tower 1B TPS — GEO + quantum"
+rule = "Never delete — downgrade to free mesh — no ICANN lockout"
+
+[central_routes]
+"/" = "CENTRAL DASHBOARD $100 HUMA"
+"/register" = "Register new.huma 10 HUMA/year"
+"/towers" = "10B Towers Grid"
+"/users" = "DID Registry"
+"/pay" = "Pay Mesh *629# + faucet.huma"
+"/orbital" = "SATURN LEO + GEO + QUANTUM"
+"/control" = "HGNBerry Approve 31415"

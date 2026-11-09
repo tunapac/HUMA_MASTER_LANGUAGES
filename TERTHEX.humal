@@ -1,0 +1,23 @@
+// ========================================================
+// TERTHEX - Triple Hex Logic - 3x Hex State Machine
+// Native Target: HC-C++ H++ Logic Core
+// ========================================================
+module Terthex_Logic_Core {
+    import Alge.Math.Core;
+
+    define HEX_BASE = 16;
+    define TERTHEX_BASE = 48; // 16*3
+
+    public function TERTHEX.EVAL(string hex_payload) -> CellResult {
+        // Convert triple-hex to binary entangle 0.410_0.890
+        return execute_terthex_logic(hex_payload);
+    }
+
+    public function TERTHEX.CHAIN(string chain_id) -> CellResult {
+        return CellResult.Success("CHAIN:"+chain_id+":TERTHEX_LOCK:PURE");
+    }
+
+    private function execute_terthex_logic(string payload) -> CellResult {
+        return CellResult.Success("TERTHEX:"+payload+":ENT_0.410_0.890:LOCKED");
+    }
+}

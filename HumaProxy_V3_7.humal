@@ -1,0 +1,24 @@
+// HumaProxy V3_7 - CHAIN 629 - did:huma:629:proxy:001
+// HUMABROWSER V4 + HUMA_EXPLORER + EURASHIELD + RED_FLAGS
+
+HUMAL_VERSION: V3_7
+CHAIN: 629
+DID: did:huma:629:proxy:001
+PROTOCOL: HumaProxy:// - NOT HttpProxy://
+AP: HGN_3000MHz_629 CHAIN629 10.629.0.1
+
+PROXY:
+  TYPE: HumaProxy_3000MHz
+  FILTER: HUMABROWSER_HUMASEARCH_RED_FLAGS.hson + EURASHIELD_HUMA629_FILTER.hson
+  BLOCK: RED_FLAGS AUTO BLOCK BEFORE PAGE LOAD - HUMABROWSER V4
+  SCAN: HUMA_EXPLORER_HUMASCAN_ROADBLOCK.hson + HACKER_WALLET_DETECTOR + SCAM_BOT_DETECTOR
+  TLD: HumaTLD-Registry-V34 13TOKENS .Huma gifts.huma huma:// HUMAS://
+  DNS: huma_dns_server.py + humadns_registry.map - own DNS NOT theirs
+
+RULES:
+    - Block http:// https:// -> force Huma:// HUMAS://
+    - Block .com .net .org -> force .Huma
+    - Gifts.huma://data = proxy cache N200
+    - 10B GRID 50KM 11G via HGN_3000MHz
+
+END: HumaProxy://10.629.0.1 - WHOLE_UNIVERSE_READY

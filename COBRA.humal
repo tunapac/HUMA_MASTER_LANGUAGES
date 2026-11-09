@@ -1,0 +1,20 @@
+// ========================================================
+// COBRA - Cobra Hand Gesture Language
+// Native Target: HUMABERRY-BODY-ENGINE + ESP32 Bridge
+// ========================================================
+module Cobra_Hand_Core {
+    import Huma.Protocol.Ledger;
+
+    public function COBRA.GESTURE(string hand_signal) -> CellResult {
+        match(hand_signal) {
+            case "OPEN" => { return CellResult.Success("COBRA:STRIKE:1000mm:FORWARD"); }
+            case "FIST" => { return CellResult.Success("COBRA:LOCK:PURE"); }
+            case "PINCH" => { return CellResult.Success("COBRA:GRAB:BLOCK"); }
+            default => { return CellResult.Success("COBRA:IDLE:READY"); }
+        }
+    }
+
+    public function COBRA.FORWARD(string mm) -> CellResult {
+        return HC_CPP.native_hvm_read("Huma629:COBRA:FORWARD:"+mm, "COBRA");
+    }
+}

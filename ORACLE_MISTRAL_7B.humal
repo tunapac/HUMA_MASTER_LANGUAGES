@@ -1,0 +1,14 @@
+HUMA-GENESIS-huma-q-root: mistral
+
+NODE mistral_software {
+  owner: HUMA
+  dependency: NONE
+  factory: 
+  model: mistral_software_built_no_pull
+  host: mesh://127.0.0.1:11434
+  did: did:huma:629:mistral
+  tld: mistral.huma
+  routes: [*629#, DATA-629, gift.huma://data, mesh://tower]
+  capability: 11k/sec USSD + unlimited data pins + 500k SIM/day routing
+  status: built_no_pull
+}

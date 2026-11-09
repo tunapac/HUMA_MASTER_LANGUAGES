@@ -1,0 +1,10 @@
+# HSON v1 - PURE HGN - NO JSON - NO PY - HGN Q-LAB DATA
+HUMA629:CHAIN629:HUMAL.STATE::Q_CHIP_ACTIVE
+HUMA629:CHAIN629:QCHIP.PERCEIVE:acetone0.80,ammonia0.20,ethanol0.10,isoprene0.30,h2s0.05,pentane0.40,co0.10,benzene0.05:E1
+HUMA629:CHAIN629:QCHIP.DIAGNOSE:IBM_Eagle_127:ketosis 89.7% TOP:E2
+HUMA629:CHAIN629:QCHIP.DIAGNOSE:Rigetti_Aspen_M3:entanglement 0.320:E3
+HUMA629:CHAIN629:QCHIP.SOLUTION:FLAG ketosis -> BloodSugar Ketones Electrolytes + hydrate 24h:E4
+HUMA629:CHAIN629:QCHIP.LOG:huma_logs.jsonl append jsonl training gold:F5
+HUMA629:CHAIN629:QCHIP.CSV:breath_data.csv acetone,ammonia,ethanol,isoprene,h2s,pentane,co,benzene,label ketosis:F6
+HUMA629:CHAIN629:LOCK
+HUMA629:CHAIN629:HUMABERRY.FORWARD:1000mm:E7
