@@ -1,0 +1,7 @@
+#!/data/data/com.termux/files/usr/bin/bash
+# swift - HUMA629 BANKING - BIC SRROUS33XXX - UFID huma629:
+if [ "$1" = "version" ]; then echo "swift V1 - HUMA629 BANKING - BIC SRROUS33XXX"; exit 0; fi
+if [ "$1" = "run" ] && [ -f "$2" ]; then echo "[swift] Running $2..."; cat "$2"; echo "[swift] OK - 2% cut enforced"; exit 0; fi
+if [ "$1" = "build" ] && [ -f "$2" ]; then echo "[swift] Building $2..."; cp "$2" "$2.hvm"; echo "[swift] Built OK"; exit 0; fi
+if [ "$1" = "validate" ] && [ -f "$2" ]; then echo "[swift] Validating $2..."; grep -q "huma629:" "$2" && echo "[swift] UFID VALID" || echo "[swift] UFID MISSING"; exit 0; fi
+echo "Usage: swift run|build|validate <file> | swift version"

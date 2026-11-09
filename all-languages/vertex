@@ -1,0 +1,6 @@
+#!/data/data/com.termux/files/usr/bin/bash
+# vertex - HUMA629 - CHAIN 629 - PUF 368f9466
+if [ "$1" = "version" ]; then echo "vertex V1 - HUMA629 - CHAIN 629"; exit 0; fi
+if [ "$1" = "run" ] && [ -f "$2" ]; then echo "[vertex] Running $2..."; cat "$2"; echo "[vertex] OK"; exit 0; fi
+if [ "$1" = "build" ] && [ -f "$2" ]; then echo "[vertex] Building $2..."; cp "$2" "$2.hvm"; echo "[vertex] Built OK"; exit 0; fi
+echo "Usage: vertex run|build <file> | vertex version"

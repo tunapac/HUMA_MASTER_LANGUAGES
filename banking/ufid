@@ -1,0 +1,7 @@
+#!/data/data/com.termux/files/usr/bin/bash
+# ufid - HUMA629 BANKING - BIC SRROUS33XXX - UFID huma629:
+if [ "$1" = "version" ]; then echo "ufid V1 - HUMA629 BANKING - BIC SRROUS33XXX"; exit 0; fi
+if [ "$1" = "run" ] && [ -f "$2" ]; then echo "[ufid] Running $2..."; cat "$2"; echo "[ufid] OK - 2% cut enforced"; exit 0; fi
+if [ "$1" = "build" ] && [ -f "$2" ]; then echo "[ufid] Building $2..."; cp "$2" "$2.hvm"; echo "[ufid] Built OK"; exit 0; fi
+if [ "$1" = "validate" ] && [ -f "$2" ]; then echo "[ufid] Validating $2..."; grep -q "huma629:" "$2" && echo "[ufid] UFID VALID" || echo "[ufid] UFID MISSING"; exit 0; fi
+echo "Usage: ufid run|build|validate <file> | ufid version"

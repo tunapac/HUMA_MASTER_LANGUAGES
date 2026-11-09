@@ -1,0 +1,22 @@
+HUMAL V1 - HUMA629 - CHAIN 629
+APP HUMA629 A2U - App to User - TEST-PI ONLY
+PUF 368F9466
+
+ACTION send_reward:
+  TO uid = Pi user id
+  AMOUNT = 0.1 Test-Pi
+  MEMO = HUMA629 reward - TEST ONLY
+  FEE = 2% to huma629:368f9466:main:62901:8f3e
+  SEND via Pi API Key in Vercel env PI_API_KEY
+  LOG in HSON file a2u_log.hson
+END
+
+NEED 5 UNIQUE WALLETS:
+  WALLET 1 = Pi user 1
+  WALLET 2 = Pi user 2
+  WALLET 3 = Pi user 3
+  WALLET 4 = Pi user 4
+  WALLET 5 = Pi user 5
+  SAME WALLET 5 TIMES = DOES NOT COUNT
+  MUST BE 5 DIFFERENT PEOPLE
+END

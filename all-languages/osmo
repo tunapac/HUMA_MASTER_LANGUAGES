@@ -1,0 +1,6 @@
+#!/data/data/com.termux/files/usr/bin/bash
+# osmo - HUMA629 - CHAIN 629 - PUF 368f9466
+if [ "$1" = "version" ]; then echo "osmo V1 - HUMA629 - CHAIN 629"; exit 0; fi
+if [ "$1" = "run" ] && [ -f "$2" ]; then echo "[osmo] Running $2..."; cat "$2"; echo "[osmo] OK"; exit 0; fi
+if [ "$1" = "build" ] && [ -f "$2" ]; then echo "[osmo] Building $2..."; cp "$2" "$2.hvm"; echo "[osmo] Built OK"; exit 0; fi
+echo "Usage: osmo run|build <file> | osmo version"

@@ -1,0 +1,6 @@
+#!/data/data/com.termux/files/usr/bin/bash
+# anaconda - HUMA629 - CHAIN 629 - PUF 368f9466
+if [ "$1" = "version" ]; then echo "anaconda V1 - HUMA629 - CHAIN 629"; exit 0; fi
+if [ "$1" = "run" ] && [ -f "$2" ]; then echo "[anaconda] Running $2..."; cat "$2"; echo "[anaconda] OK"; exit 0; fi
+if [ "$1" = "build" ] && [ -f "$2" ]; then echo "[anaconda] Building $2..."; cp "$2" "$2.hvm"; echo "[anaconda] Built OK"; exit 0; fi
+echo "Usage: anaconda run|build <file> | anaconda version"

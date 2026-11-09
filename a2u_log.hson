@@ -1,0 +1,9 @@
+HSON V1 - HUMA629 - CHAIN 629
+a2u_test:
+  wallet_1: EMPTY
+  wallet_2: EMPTY
+  wallet_3: EMPTY
+  wallet_4: EMPTY
+  wallet_5: EMPTY
+  total_unique: 0 / 5
+  status: WAITING FOR 5 WALLETS

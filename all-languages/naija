@@ -1,0 +1,7 @@
+#!/data/data/com.termux/files/usr/bin/bash
+# NAIJA Compiler - Language: PIDGINARY
+# Usage: naija run file.pidginary | naija build file.pidginary
+if [ "$1" = "version" ]; then echo "NAIJA V1 - PIDGINARY Compiler - HUMA629"; exit 0; fi
+if [ "$1" = "run" ] && [ -f "$2" ]; then echo "[NAIJA] Running PIDGINARY $2..."; cat "$2"; echo "[NAIJA] OK"; exit 0; fi
+if [ "$1" = "build" ] && [ -f "$2" ]; then echo "[NAIJA] Building $2..."; cp "$2" "${2%.pidginary}.hvm"; echo "[NAIJA] Built OK"; exit 0; fi
+echo "Usage: naija run|build <file.pidginary> | naija version"
