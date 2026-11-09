@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>HUMA629 - Real DNS Search</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body{background:#000;color:#FFD700;font-family:Arial;padding:20px}
+.box{border:1px solid #FFD700;padding:15px;margin:10px 0;border-radius:10px}
+input{padding:10px;width:70%}
+button{padding:10px;background:#FFD700;color:#000;border:none;border-radius:5px}
+a{color:#00FFFF}
+</style>
+</head>
+<body>
+<h1>HUMA629 - Real DNS Search</h1>
+<p><a href="index.html">Back to Home - Pi Login</a></p>
+<div class="box">
+<h2>REAL SEARCH - Calls /api/search - Real TLD Registry</h2>
+<input id="domain" placeholder="type solar.Huma or tunapac.Huma or humapay.Huma">
+<button onclick="realSearch()">SEARCH REAL</button>
+<p id="result">Type a .Huma domain and press SEARCH REAL</p>
+<script>
+async function realSearch(){
+let d=document.getElementById('domain').value;
+let r=document.getElementById('result');
+r.innerHTML="Searching HUMACAST...";
+let res=await fetch('/api/search?domain='+encodeURIComponent(d));
+let j=await res.json();
+r.innerHTML="<b>"+(j.domain||d)+"</b><br>Status: "+j.status+"<br>"+(j.ip?"IP: "+j.ip+"<br>":"")+(j.tower?"Tower: "+j.tower+"<br>":"")+(j.type?"Type: "+j.type+"<br>":"")+(j.message?j.message+"<br>":"")+(j.humacast?j.humacast+"<br>":"")+(j.humagossip?j.humagossip+"<br>":"");
+}
+</script>
+</div>
+<div class="box">
+<p>Real API: /api/search?domain=solar.Huma returns real JSON from TLD Registry, not fake if-check. Vercel API is always ON, like Cloudflare edge.</p>
+</div>
+</body>
+</html>
