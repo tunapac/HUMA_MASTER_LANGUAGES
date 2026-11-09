@@ -1,8 +1,81 @@
-<!DOCTYPE html><html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>HUMA629 - Money That Cannot Be Cloned</title></head><body style="font-family:sans-serif;background:#0a0a2e;color:white;padding:20px;text-align:center">
-<h1>HUMA629</h1><p>Decentralised Bank Coding Languages - Money That Cannot Be Cloned</p><p>BIC SRROUS33XXX | UFID huma629:... | TEST ONLY</p>
-<p><a href="https://github.com/tunapac/HUMA_MASTER_LANGUAGES" style="color:gold">GitHub: tunapac/HUMA_MASTER_LANGUAGES</a></p>
-<p>17 Languages + 8 Protocols + 4 Banking Languages</p><p>PAY 5000 -> CUT 100 (2%) -> NET 4900</p>
-<p>Login with Pi in Pi Browser to test real Pi payment.</p>
-<script src="https://sdk.minepi.com/pi-sdk.js"></script><script>Pi.init({version:"2.0",sandbox:true});async function piLogin(){const a=await Pi.authenticate(['username','payments'],()=>{});document.getElementById('u').innerText="Pi User: "+a.user.username} </script>
-<button onclick="piLogin()" style="padding:12px 20px;background:gold;border:none;border-radius:8px">Login with Pi</button><div id="u"></div>
-</body></html>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>HUMA629 - DNS LIVE - TLD/DNS Come To Live</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body{background:#000;color:#FFD700;font-family:Arial;padding:20px}
+h1{color:#FFD700}
+.box{border:1px solid #FFD700;padding:15px;margin:10px 0;border-radius:10px}
+.green{color:#00FF00}.cyan{color:#00FFFF}
+input{padding:10px;width:70%}
+button{padding:10px;background:#FFD700;color:#000;border:none;border-radius:5px;margin:5px}
+a{color:#00FFFF}
+</style>
+</head>
+<body>
+<h1>HUMA629</h1>
+<p>Decentralised Bank Coding Languages</p>
+<p><a href="https://github.com/tunapac/HUMA_MASTER_LANGUAGES">GitHub - tunapac/HUMA_MASTER_LANGUAGES</a></p>
+<p>21 Languages + 8 Protocols + 4 Banking Languages - HUMA629</p>
+
+<div class="box">
+<h2>Login with Pi</h2>
+<p>Login with Pi in Pi Browser to test real Pi payment</p>
+<script src="https://sdk.minepi.com/pi-sdk.js"></script>
+<button onclick="piLogin()" style="padding:12px 20px">Login with Pi</button>
+<p id="pi-result"></p>
+<script>
+function piLogin(){
+if(window.Pi){ Pi.init({version:"2.0", sandbox:true}); Pi.authenticate(['username','payments'], function(auth){ document.getElementById('pi-result').innerHTML="Pi Login OK: "+auth.user.username; }); } else { document.getElementById('pi-result').innerHTML="Open in Pi Browser to login with Pi"; }
+}
+</script>
+<p>TEST ONLY - sandbox: true until Pi Core Team approves Mainnet</p>
+</div>
+
+<div class="box">
+<h2>DNS LIVE - TLD/DNS Come To Live</h2>
+<p class="green">● TLD REGISTRY: STARTED</p>
+<p class="green">● DNS VAULT SERVER: STARTED</p>
+<p class="green">● HUMACAST: STARTED - One Address Many Towers Nearest Answers</p>
+<p class="green">● HUMAGOSSIP: STARTED - Tower Tells Tower - Universe Knows</p>
+<p>13 ROOTS: solar.Huma, light.Huma, gold.Huma, diamond.Huma, oil.Huma, lithium.Huma, water.Huma, quartz.Huma, meteor.Huma, atom.Huma, matter.Huma, uranium.Huma, ollama.Huma</p>
+<p>7 TOWERS: 10.629.0.1, 10.629.0.10, 10.629.0.13, 10.629.0.17, 10.629.0.20, 10.629.0.30, 10.629.0.99</p>
+<p>ROOT: tunapac.Huma - Architect: TUNAPAC - Chain 629 - PUF 368f9466</p>
+</div>
+
+<div class="box">
+<h2>LIVE SEARCH - Try a .Huma domain</h2>
+<input id="domain" placeholder="type solar.Huma or tunapac.Huma or humapay.Huma">
+<button onclick="search()">SEARCH</button>
+<p id="result"></p>
+<script>
+function search(){
+let d=document.getElementById('domain').value.toLowerCase();
+let r=document.getElementById('result');
+if(d.includes('solar')) r.innerHTML="FOUND: solar.Huma -> 10.629.0.1:6290 - HUMACAST Nearest Tower Answers";
+else if(d.includes('tunapac')) r.innerHTML="FOUND: tunapac.Huma -> ROOT - ARCHITECT TUNAPAC";
+else if(d.includes('humapay')) r.innerHTML="FOUND: humapay.Huma -> 82 APPS - HUMAPAY - FOUND";
+else if(d.includes('.huma')) r.innerHTML="NOT REGISTERED YET - YOU CAN REGISTER "+d+" via HUMA Browser";
+else r.innerHTML="Type a .Huma domain - Example: solar.Huma";
+}
+</script>
+</div>
+
+<div class="box">
+<h2>HUMA:// AND HUMAS://</h2>
+<p><b>HUMA://</b> = gap_form - plain, fast, open - like http://</p>
+<p><b>HUMAS://</b> = secure - PUF + Q-CHIP + Vault 24h + Pulse 10% + 2% Fee - like https:// but stronger</p>
+<p>Chrome: Copy HUMAS://solar.Huma, paste in HUMA Browser. Chrome shows https:// bridge, HUMA Browser runs HUMAS:// door.</p>
+<p>Example: <span class="cyan">HUMAS://solar.Huma</span> <button onclick="navigator.clipboard.writeText('HUMAS://solar.Huma')">COPY</button></p>
+</div>
+
+<div class="box">
+<h2>HUMACAST + HUMAGOSSIP - NOT ANYCAST</h2>
+<p><b>HUMACAST:</b> One Address 10.629.0.1:6290, Many Towers, Nearest Answers. If One OFF, Next Nearest Answers. DNS Never Dies.</p>
+<p><b>HUMAGOSSIP:</b> Tower Tells Tower - Universe Knows In Seconds. Not Via ICANN. Not Via Vercel. Via Gossip.</p>
+<p>Bridge: Vercel = Bridge, GitHub = Shelf, Termux = Engine. Cloudflare did same - Bridge first, Own Server later.</p>
+</div>
+</body>
+</html>
